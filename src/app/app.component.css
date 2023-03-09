@@ -1,0 +1,10 @@
+.back{
+   margin-top: 20px;
+    margin-left: 30px;
+}
+.backbtn{
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: cover;
+    color: brown;
+}

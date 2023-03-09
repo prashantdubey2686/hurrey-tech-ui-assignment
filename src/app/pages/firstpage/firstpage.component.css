@@ -1,0 +1,46 @@
+.main-logo {
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  width: 255px;
+  height: 110.4px;
+  padding: 12px;
+  background-color: #000000;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0.9px;
+  border-radius: 10px;
+  background: linear-gradient(#141923, #141923) padding-box,
+    linear-gradient(to right, #7b72cc, #dc0078, #3871d6) border-box;
+  border: 2px solid transparent;
+  animation: zoom-in-zoom-out 2s linear forwards;
+}
+.logo1 {
+ max-width: 220px;
+  max-height: 100px;
+  display: block;
+  margin: auto;
+  border-radius: 15.75px;
+  padding: 2px;
+  left: 12%;
+  top:12%;
+  object-fit: contain;
+  position: absolute;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  80% {
+    transform: scale(.5, .5);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+  }
+ 
+

@@ -1,0 +1,8 @@
+<div class="two">
+    <h1 class="content">What is your name?</h1>
+    <input type="text" class="inputbox" required name="inputvalue" placeholder="-Type here-" [(ngModel)]="dataService.name" />
+    <div class="div-button">
+        <input type="button" [disabled]="!(dataService.name.length > 0)" value="Next" (click)="nextStep()"/>
+    </div>
+    
+  </div>

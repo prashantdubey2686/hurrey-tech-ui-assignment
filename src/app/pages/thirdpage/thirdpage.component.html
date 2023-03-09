@@ -1,0 +1,99 @@
+<div class="thirdpage">
+  <div class="header-content">
+    <h1>Hello {{ dataService.name }}!</h1>
+  </div>
+  <div class="content">
+    <p>Choose avatar</p>
+  </div>
+  <div>
+    <div class="div-avtars">
+      <div
+        class="avatar-logo"
+        [ngClass]="{
+          selectedavtar:
+            dataService.selectedimage ==
+            'AdobeStock_488243549 [Converted] 1.png'
+        }"
+        (click)="selectimage('AdobeStock_488243549 [Converted] 1.png')"
+      >
+        <img
+          src="../../../assets/AdobeStock_488243549 [Converted] 1.png"
+          alt="avtar"
+          class="logo"
+        />
+      </div>
+      <div
+        class="avatar-logo"
+        [ngClass]="{
+          selectedavtar:
+            dataService.selectedimage ==
+            'AdobeStock_488243549 [Converted] 2.png'
+        }"
+        (click)="selectimage('AdobeStock_488243549 [Converted] 2.png')"
+      >
+        <img
+          src="../../../assets/AdobeStock_488243549 [Converted] 2.png"
+          alt="avtar"
+          class="logo"
+        />
+      </div>
+    </div>
+    <div class="div-avtars">
+      <div
+        class="avatar-logo"
+        [ngClass]="{
+          selectedavtar:
+            dataService.selectedimage ==
+            'AdobeStock_488243549 [Converted] 3.png'
+        }"
+        (click)="selectimage('AdobeStock_488243549 [Converted] 3.png')"
+      >
+        <img
+          src="../../../assets/AdobeStock_488243549 [Converted] 3.png"
+          alt="avtar"
+          class="logo"
+        />
+      </div>
+      <div
+        class="avatar-logo"
+        [ngClass]="{
+          selectedavtar:
+            dataService.selectedimage ==
+            'AdobeStock_488243549 [Converted] 4.png'
+        }"
+        (click)="selectimage('AdobeStock_488243549 [Converted] 4.png')"
+      >
+        <img
+          src="../../../assets/AdobeStock_488243549 [Converted] 4.png"
+          alt="avtar"
+          class="logo"
+        />
+      </div>
+    </div>
+    <div class="div-avtars">
+      <div
+        class="avatar-logo"
+        [ngClass]="{
+          selectedavtar:
+            dataService.selectedimage ==
+            'AdobeStock_488243549 [Converted] 5.png'
+        }"
+        (click)="selectimage('AdobeStock_488243549 [Converted] 5.png')"
+      >
+        <img
+          src="../../../assets/AdobeStock_488243549 [Converted] 5.png"
+          alt="avtar"
+          class="logo"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="div-button">
+    <input
+      type="button"
+      value="Next"
+      (click)="nextStep()"
+      [disabled]="!(dataService.selectedimage.length > 0)"
+    />
+  </div>
+</div>

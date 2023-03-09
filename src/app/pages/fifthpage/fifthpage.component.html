@@ -1,0 +1,43 @@
+<div class="fifth">
+  <div>
+    <div class="avatar-logo">
+      <img
+        src="../../../assets/AdobeStock_488243549 [Converted] 1.png"
+        alt="avtar"
+        class="logo"
+      />
+    </div>
+    <span class="name">{{ dataService.name }}</span>
+  </div>
+  <div class="input-style">
+    <input
+      type="text"
+      class="inputbox"
+      name="inputvalue"
+      placeholder="-Room name-"
+      [(ngModel)]="dataService.roomName"
+    />
+    <input
+      type="text"
+      class="inputbox"
+      name="inputvalue"
+      placeholder="-No of players-"
+      [(ngModel)]="dataService.noOfPlayers"
+    />
+  </div>
+  <div class="div-button">
+    <input
+      type="button"
+      value="Next"
+      [disabled]="
+        !(
+          dataService.roomName.length > 0 &&
+          dataService.noOfPlayers.length > 0 &&
+          dataService.noOfPlayers > '0' &&
+          dataService.noOfPlayers < '5'
+        )
+      "
+      (click)="nextStep()"
+    />
+  </div>
+</div>
